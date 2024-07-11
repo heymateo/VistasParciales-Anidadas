@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Paciente>
+
+@{
+    ViewData["Title"] = "Lista de Pacientes";
+}
+
+<h1>Lista de Pacientes</h1>
+
+@await Html.PartialAsync("_PacienteList", Model)
